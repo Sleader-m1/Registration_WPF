@@ -1,0 +1,47 @@
+﻿<Window x:Class="DB_WPF_CSharp.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DB_WPF_CSharp"
+        mc:Ignorable="d"
+        Title="Registration" Height="500" Width="700" WindowStyle="None">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="453*"/>
+        </Grid.RowDefinitions>
+        <Border Background="#423A60" Grid.Row="0" MouseDown="Border_MouseDown"/>
+        <Border Background="#090321" Grid.Row="2" MouseDown="Border_MouseDown"/>
+
+        <Label Content="Регистрация" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White" FontSize="35" Grid.Row="1" />
+
+        <TextBox Name="Login" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Top" Height="40" Width="300" Margin="0,80,0,0" Grid.Row="1" FontSize="30"/>
+        <TextBox Name="Password" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Top" Height="40" Width="300" Margin="0,150,0,0" Grid.Row="1" FontSize="30"/>
+        <TextBox Name="Password_rep" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Top" Height="40" Width="300" Margin="0,220,0,0" Grid.Row="1" FontSize="30"/>
+        <TextBox Name="First_name" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Top" Height="40" Width="300" Margin="0,290,0,0" Grid.Row="1" FontSize="30"/>
+        <TextBox Name="Last_name" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Top" Height="40" Width="300" Margin="0,360,0,0" Grid.Row="1" FontSize="30"/>
+
+        <Label Foreground="White" Content="Логин" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-400,80,0,0" Height="40" Width="70" FontSize="20"/>
+        <Label Foreground="White" Content="Пароль" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-400,150,0,0" Height="40" Width="80" FontSize="20"/>
+        <Label Foreground="White" Content="Пароль" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-400,220,0,0" Height="40" Width="80" FontSize="20"/>
+        <Label Foreground="White" Content="Имя" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-400,290,0,0" Height="40" Width="50" FontSize="20"/>
+        <Label Foreground="White" Content="Фамилия" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-400,360,0,0" Height="40" Width="95" FontSize="20"/>
+
+        <Button Name="RegistrationButton"  Background="Gray" Content="Зарегистрироваться" Height="40" Width="160"
+                Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10"
+                FontSize="16" Click="RegistrationButton_Click"/>
+
+
+
+        <Button Name="Close" Width="15" Height="15" Click="Close_Click" Grid.Row="0" HorizontalAlignment="Right" Margin="10, 0">
+            <Image Source="images\X.png" Stretch="UniformToFill"/>
+        </Button>
+        <Button Name="Full" Width="15" Height="15" Click="Full_Click" Grid.Row="0" HorizontalAlignment="Right" Margin="30, 0">
+            <Image Source="images\fullScreen.png" Stretch="UniformToFill"/>
+        </Button>
+        <Button Name="Turn" Width="15" Height="15" Click="Turn_Click" Grid.Row="0" HorizontalAlignment="Right" Margin="50, 0">
+            <Image Source="images\svert.png" Stretch="UniformToFill"/>
+        </Button>
+    </Grid>
+</Window>
